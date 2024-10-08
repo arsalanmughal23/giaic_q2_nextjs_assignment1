@@ -2,7 +2,7 @@ import services, { Service } from '@/app/data/services';
 import Link from 'next/link';
 
 
-export default function ServicesPage({params}:any) {
+export default function ServicesPage({params}:{params:{serviceId:number}}) {
     const service:Service | undefined = services.find((service) => service.id == params.serviceId);
 
     return (

@@ -8,10 +8,10 @@ export default function Header() {
             </div>
             <nav className="w-8/12">
                 <ul className="flex gap-2 justify-center">
-                    <li className="border border-zinc-100 px-3 rounded"><Link href={'/'}>Home</Link></li>
-                    <li className="border border-zinc-100 px-3 rounded"><Link href={'/about'}>About</Link></li>
-                    <li className="border border-zinc-100 px-3 rounded"><Link href={'/contact'}>Contact</Link></li>
-                    <li className="border border-zinc-100 px-3 rounded"><Link href={'/services'}>Services</Link></li>
+                    <li><Link href={'/'} className="border border-zinc-100 px-3 py-1 rounded">Home</Link></li>
+                    <li><Link href={'/about'} className="border border-zinc-100 px-3 py-1 rounded">About</Link></li>
+                    <li><Link href={'/contact'} className="border border-zinc-100 px-3 py-1 rounded">Contact</Link></li>
+                    <li><Link href={'/services'} className="border border-zinc-100 px-3 py-1 rounded">Services</Link></li>
                 </ul>
             </nav>
             <div className="w2/12"></div>

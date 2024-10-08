@@ -1,5 +1,4 @@
 import services, { Service } from '@/app/data/services';
-import Link from 'next/link';
 
 
 export default function ServicesPage({params}:{params:{serviceId:number}}) {
@@ -17,14 +16,14 @@ export default function ServicesPage({params}:{params:{serviceId:number}}) {
                         <div className="card-header text-3xl py-2">
                             { service?.name || 'Service Name' }
                         </div>
-                        <div className="card-body flex justify-between">
-                            <div>{ service?.developer || 'Dev' }</div>
-                            <div>{ service?.rate_per_hour || 0 }</div>
-                        </div>
                         <div className="card-body">
-                            <Link href={`/services/${service?.id}`}>
-                                <div className='border border-slate-100 rounded mt-2 p-0 px-2 w-fit'>Read More</div>
-                            </Link>
+                            <div className="flex justify-between">
+                                <div>{ service?.developer || 'Dev' }</div>
+                                <div>{ service?.rate_per_hour || 0 }</div>
+                            </div>
+                            <p className="mt-3">
+                                { service?.description }
+                            </p>
                         </div>
                         
                     </div>

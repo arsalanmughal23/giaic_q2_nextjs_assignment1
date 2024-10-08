@@ -21,12 +21,11 @@ export default function ServicesPage() {
                                 <div>{ service.developer || 'Dev' }</div>
                                 <div>{ service.rate_per_hour || 0 }</div>
                             </div>
-                            <div className="card-body">
+                            <div className="card-footer">
                                 <Link href={`/services/${service.id}`}>
                                     <div className='border border-slate-100 rounded mt-2 p-0 px-2 w-fit'>Read More</div>
                                 </Link>
                             </div>
-                            
                         </div>
                     )
                 })

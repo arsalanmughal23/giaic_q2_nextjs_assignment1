@@ -1,11 +1,10 @@
 import Link from "next/link";
-import { geistMono } from "../layout";
 
 export default function Header() {
     return (
         <header className="flex p-5 border-b border-b-slate-100">
             <div className="w-2/12">
-                <h1 className={geistMono.className}>LOGO</h1>
+                <h1>LOGO</h1>
             </div>
             <nav className="w-8/12">
                 <ul className="flex gap-2 justify-center">

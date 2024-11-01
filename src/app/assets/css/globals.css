@@ -13,11 +13,31 @@
     --foreground: #ededed;
   }
 }
+@media (max-width: 420px) {
+  header.header>.container, .headerNavMenu>ul {
+    @apply flex-col
+  }
+}
+@media (max-width: 950px) {
+  .heroSection>.container>.inner {
+    @apply flex-col
+  }
+  .heroSection>.container>.inner>.left {
+    @apply text-center
+  }
+  .heroSection>.container>.inner>.right {
+    @apply flex justify-center
+  }
+}
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  @apply px-3 py-1 rounded
 }
 
 @layer utilities {
